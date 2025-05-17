@@ -23,7 +23,11 @@
   <label for="nameInput">Enter your name:</label>
   <input type="text" id="nameInput" />
   <button onclick="sayHello()">Greet Me</button>
+<<<<<<< HEAD
 <button onclick="Alertme()">Alert me</button>
+=======
+  <button onclick="cons()">Console Me</button>
+>>>>>>> 6365c5a (third)
   <p id="greeting"></p>
 
   <script>
@@ -40,9 +44,12 @@
       const greeting = name
         ? `Hello, ${name}! 👋`
         : "Please enter your name.";
+
 alert(greeting);
       }
-
+function cons(){
+      console.log(greeting);
+    }
 
   </script>
 
