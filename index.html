@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greeting App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #greeting {
+      margin-top: 15px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Say Hello!</h1>
+
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput" />
+  <button onclick="sayHello()">Greet Me</button>
+
+  <p id="greeting"></p>
+
+  <script>
+    function sayHello() {
+      const name = document.getElementById("nameInput").value;
+      const greeting = name
+        ? `Hello, ${name}! 👋`
+        : "Please enter your name.";
+      document.getElementById("greeting").textContent = greeting;
+    }
+  </script>
+
+</body>
+</html>
